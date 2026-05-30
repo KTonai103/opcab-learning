@@ -3,16 +3,16 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CABGを極める — 冠動脈バイパス手術 学習リソース集 ｜ U-40 近畿支部 BLS</title>
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Crect width='24' height='24' rx='5' fill='%230d2747'/%3E%3Cpath d='M12 20s-6-4-8-8C2.5 8.5 4 6 6.5 6 8.2 6 9.5 7 12 9c2.5-2 3.8-3 5.5-3C20 6 21.5 8.5 20 12c-2 4-8 8-8 8z' fill='%23e63946'/%3E%3C/svg%3E">
-<title>OPCAB / CABG を学ぶ — 冠動脈バイパス手術 学習リソース集 ｜ U-40 近畿支部 BLS</title>
-<meta name="description" content="U-40 近畿支部 BLS（2026年6月）。冠動脈バイパス手術（OPCAB / CABG）を学ぶための厳選オンライン学習リソース集。手技ビデオ・ハンズオン・動画ライブラリへスマートフォンからすぐにアクセス。藤内康平 / Kohei Tonai。">
+<meta name="description" content="U-40 近畿支部 BLS（2026年5月31日）。冠動脈バイパス手術（OPCAB / CABG）を学ぶための厳選オンライン学習リソース集。手技ビデオ・ハンズオン・動画ライブラリへスマートフォンからすぐにアクセス。藤内康平 / Kohei Tonai。">
 <meta name="theme-color" content="#081b33">
 <meta name="color-scheme" content="light only">
-<meta name="author" content="藤内康平 / Kohei Tonai">
+<meta name="author" content="藤内康平 / Kohei Tonai ｜ 大阪大学医学部附属病院 心臓血管外科">
 
 <!-- Open Graph -->
-<meta property="og:title" content="OPCAB / CABG を学ぶ — 冠動脈バイパス手術 学習リソース集">
-<meta property="og:description" content="U-40 近畿支部 BLS（2026年6月）。冠動脈バイパス手術を学ぶための厳選オンライン学習リソース集。">
+<meta property="og:title" content="CABGを極める — 冠動脈バイパス手術 学習リソース集">
+<meta property="og:description" content="U-40 近畿支部 BLS（2026年5月31日）。冠動脈バイパス手術を学ぶための厳選オンライン学習リソース集。">
 <meta property="og:type" content="website">
 <meta property="og:locale" content="ja_JP">
 
@@ -161,6 +161,7 @@
     gap:clamp(1.8rem,5vw,2.6rem);
     align-items:center;
   }
+  .hero-copy{max-width:780px}
 
   .kicker{
     display:inline-flex;align-items:center;gap:.55rem;
@@ -226,6 +227,7 @@
     border:1.5px solid rgba(159,181,212,.5);
     box-shadow:var(--shadow-sm);
   }
+  .presenter .paffil{display:inline-block;font-size:.78rem;font-weight:700;color:#b7c8e2;letter-spacing:.03em;margin-bottom:.15rem}
   .presenter .pname{font-family:var(--font-display);font-weight:700;color:#fff;font-size:1.02rem;line-height:1.25}
   .presenter .prole{font-size:.74rem;color:#b7c8e2;letter-spacing:.06em}
 
@@ -269,64 +271,6 @@
     36%{opacity:1}
     44%{opacity:0}
   }
-
-  /* QR card (glassmorphic, with solid fallback) */
-  .qr-card{
-    justify-self:start;
-    width:min(100%,330px);
-    /* fallback solid-ish navy tint first, glass overlay layered above */
-    background:
-      linear-gradient(165deg,rgba(255,255,255,.16),rgba(255,255,255,.06)),
-      rgba(10,30,56,.55);
-    border:1px solid rgba(255,255,255,.28);
-    border-radius:var(--radius-lg);
-    padding:1.15rem;
-    backdrop-filter:blur(14px) saturate(140%);
-    -webkit-backdrop-filter:blur(14px) saturate(140%);
-    box-shadow:var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,.35);
-    display:grid;
-    grid-template-columns:auto 1fr;
-    gap:1rem;
-    align-items:center;
-  }
-  .qr-card .qr-frame{
-    background:#fff;
-    border-radius:14px;
-    padding:9px;
-    width:clamp(118px,34vw,150px);
-    box-shadow:0 8px 22px rgba(0,0,0,.28);
-    flex:0 0 auto;
-  }
-  .qr-card .qr-frame img{width:100%;height:auto;aspect-ratio:1/1;border-radius:5px}
-  .qr-card .qr-meta .ql{
-    font-family:var(--font-display);
-    font-weight:700;color:#fff;font-size:1rem;line-height:1.4;
-    margin:0 0 .2rem;
-  }
-  .qr-card .qr-meta .qs{
-    font-size:.78rem;color:#d3deef;letter-spacing:.03em;margin:0;
-  }
-  .qr-card .qr-meta .qtag{
-    display:inline-block;margin-top:.6rem;
-    font-size:.66rem;font-weight:700;letter-spacing:.08em;
-    color:#fff;background:rgba(230,57,70,.92);
-    padding:.22rem .6rem;border-radius:100px;
-  }
-  .qr-card .qr-meta .qdl-label{
-    margin:.75rem 0 .35rem;font-size:.66rem;font-weight:700;letter-spacing:.07em;
-    color:#d3deef;text-transform:uppercase;
-  }
-  .qr-card .qr-meta .qr-dl{display:flex;gap:.45rem;flex-wrap:wrap}
-  .qr-card .qr-meta .qr-dl a{
-    display:inline-flex;align-items:center;gap:.34rem;
-    min-height:34px;padding:.36rem .72rem;
-    font-family:var(--font-display);font-weight:700;font-size:.74rem;letter-spacing:.03em;
-    color:var(--navy);background:#fff;border-radius:9px;
-    box-shadow:0 3px 9px rgba(0,0,0,.22);
-    transition:transform .25s var(--ease), background .25s var(--ease);
-  }
-  .qr-card .qr-meta .qr-dl a svg{width:13px;height:13px;fill:var(--crimson)}
-  .qr-card .qr-meta .qr-dl a:hover{background:#f2d7da;transform:translateY(-1px)}
 
   /* =========================================================
      RESOURCES — light body
@@ -571,6 +515,134 @@
   }
 
   /* =========================================================
+     SIMULATION TRAINING — literature list
+     ========================================================= */
+  .lit{
+    margin-top:clamp(2.6rem,7vw,4.4rem);
+    padding-top:clamp(2.2rem,6vw,3.4rem);
+    border-top:1px solid var(--line);
+  }
+  /* recommended learning-order callout */
+  .lit-order{
+    position:relative;isolation:isolate;overflow:hidden;
+    background:linear-gradient(160deg,var(--navy) 0%,var(--navy-deep) 100%);
+    color:#eaf1fb;
+    border-radius:var(--radius-lg);
+    padding:clamp(1.3rem,4vw,1.9rem) clamp(1.3rem,4vw,2rem);
+    margin-bottom:clamp(1.8rem,5vw,2.6rem);
+  }
+  .lit-order::after{
+    content:"";position:absolute;z-index:-1;inset:0;
+    background:radial-gradient(120% 130% at 92% -10%,rgba(229,57,70,.28),transparent 55%);
+  }
+  .lit-order h3{
+    font-family:var(--font-display);font-weight:900;
+    font-size:clamp(1.05rem,3.4vw,1.25rem);color:#fff;margin:0 0 .9rem;
+    letter-spacing:.01em;
+  }
+  .lit-order ol{
+    list-style:none;margin:0;padding:0;
+    display:grid;gap:.55rem;
+  }
+  .lit-order li{
+    display:flex;gap:.7rem;align-items:flex-start;
+    font-size:clamp(.84rem,2.4vw,.94rem);line-height:1.65;color:#cdd9ee;
+  }
+  .lit-order li .stp{
+    flex:0 0 auto;margin-top:.1rem;
+    width:24px;height:24px;border-radius:7px;
+    display:grid;place-items:center;
+    font-family:var(--font-display);font-weight:900;font-size:.78rem;color:#fff;
+    background:linear-gradient(150deg,var(--crimson),var(--crimson-bright));
+    box-shadow:0 3px 8px rgba(181,31,42,.4);
+  }
+  .lit-order li b{color:#fff;font-weight:700}
+
+  .lit-group{margin-bottom:clamp(1.7rem,5vw,2.5rem)}
+  .lit-group:last-of-type{margin-bottom:0}
+  .lit-group > .gh{
+    display:flex;align-items:baseline;gap:.6rem;flex-wrap:wrap;
+    margin:0 0 .9rem;padding-bottom:.5rem;
+    border-bottom:2px solid var(--line);
+  }
+  .lit-group > .gh .gn{
+    font-family:var(--font-display);font-weight:900;
+    width:30px;height:30px;flex:0 0 auto;border-radius:8px;
+    display:grid;place-items:center;font-size:.92rem;color:#fff;
+    background:linear-gradient(150deg,var(--navy),var(--navy-deep));
+  }
+  .lit-group > .gh .gt{
+    font-family:var(--font-display);font-weight:700;
+    font-size:clamp(1rem,3vw,1.18rem);color:var(--navy);line-height:1.3;
+  }
+  .lit-list{display:grid;gap:.85rem}
+  @media (min-width:760px){ .lit-list{grid-template-columns:repeat(2,1fr)} }
+
+  .paper{
+    display:flex;flex-direction:column;gap:.4rem;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-left:3px solid var(--crimson);
+    border-radius:12px;
+    padding:.95rem 1.05rem 1rem;
+    box-shadow:var(--shadow-sm);
+    transition:box-shadow .35s var(--ease), transform .35s var(--ease), border-color .35s var(--ease);
+  }
+  .paper:hover,.paper:focus-within{
+    box-shadow:var(--shadow-md);transform:translateY(-3px);
+    border-left-color:var(--crimson-bright);
+  }
+  .paper .star{
+    align-self:flex-start;
+    display:inline-flex;align-items:center;gap:.28rem;
+    font-size:.64rem;font-weight:700;letter-spacing:.06em;
+    color:#9a6a00;background:#fff6e0;border:1px solid #f0d999;
+    padding:.16rem .5rem;border-radius:100px;
+  }
+  .paper .star.s2{color:#a3171f;background:#fdeaec;border-color:#f3b9bf}
+  .paper .star.vid{color:#0d3b66;background:#e6f0fb;border-color:#b9d4ef}
+  .paper .ptitle{
+    font-family:var(--font-display);font-weight:700;
+    font-size:.96rem;line-height:1.4;color:var(--navy);margin:0;
+    text-wrap:pretty;
+  }
+  .paper .pmeta{font-size:.78rem;color:var(--muted);margin:0;line-height:1.55}
+  .paper .pmeta .j{font-style:italic}
+  .paper .ppoint{
+    font-size:.82rem;color:var(--ink);margin:.1rem 0 0;line-height:1.7;
+    padding-left:.7rem;border-left:2px solid var(--line);
+  }
+  .paper .plinks{display:flex;gap:.45rem;flex-wrap:wrap;margin-top:.5rem}
+  .paper .plinks a{
+    display:inline-flex;align-items:center;gap:.32rem;
+    min-height:34px;padding:.3rem .7rem;
+    font-family:var(--font-display);font-weight:700;font-size:.74rem;letter-spacing:.02em;
+    border-radius:8px;
+    transition:transform .2s var(--ease), background .2s var(--ease), color .2s var(--ease);
+  }
+  .paper .plinks a svg{width:12px;height:12px}
+  .paper .plinks .doi{color:#fff;background:var(--crimson)}
+  .paper .plinks .doi:hover{background:var(--crimson-bright);transform:translateY(-1px)}
+  .paper .plinks .pmid{color:var(--navy);background:#eef2f8;border:1px solid var(--line)}
+  .paper .plinks .pmid:hover{background:#e2e9f3;transform:translateY(-1px)}
+
+  .lit-refs{
+    margin-top:clamp(1.6rem,5vw,2.2rem);
+    background:var(--surface);
+    border:1px dashed var(--line);
+    border-radius:14px;
+    padding:clamp(1.05rem,3.5vw,1.4rem);
+  }
+  .lit-refs .rh{
+    font-family:var(--font-display);font-weight:700;font-size:.96rem;color:var(--navy);
+    margin:0 0 .7rem;
+  }
+  .lit-refs ul{display:grid;gap:.55rem}
+  .lit-refs li{font-size:.84rem;color:var(--ink);line-height:1.6}
+  .lit-refs li a{color:var(--crimson);font-weight:700;text-decoration:underline;text-underline-offset:2px}
+  .lit-refs li .muted{color:var(--muted)}
+
+  /* =========================================================
      FOOTER
      ========================================================= */
   footer{
@@ -612,11 +684,7 @@
 
   /* ---------- Wider screens fine-tuning ---------- */
   @media (min-width:860px){
-    .hero-grid{
-      grid-template-columns:1.35fr .9fr;
-      align-items:center;
-    }
-    .qr-card{justify-self:end}
+    .h-title{font-size:clamp(3rem,6vw,5rem)}
   }
 </style>
 </head>
@@ -640,14 +708,15 @@
 
     <div class="hero-grid">
       <div class="hero-copy">
-        <span class="kicker"><span class="dot" aria-hidden="true"></span>U-40 近畿支部 BLS ・ 2026年6月</span>
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>U-40 近畿支部 BLS ・ 2026年5月31日</span>
 
-        <h1 class="h-title">OPCAB <span class="slash">/</span> CABG<br>を学ぶ</h1>
+        <h1 class="h-title">CABG<span class="slash">を</span>極める</h1>
         <p class="h-sub">冠動脈バイパス手術 — 学習リソース集</p>
 
         <div class="presenter">
           <span class="pavatar" aria-hidden="true">藤</span>
           <span>
+            <span class="paffil">大阪大学医学部附属病院 心臓血管外科</span><br>
             <span class="pname">藤内康平</span><br>
             <span class="prole">Kohei Tonai</span>
           </span>
@@ -660,24 +729,6 @@
             <path class="trace" d="M0,50 L120,50 L150,50 L165,42 L180,58 L195,50 L300,50 L330,50 L345,20 L360,84 L375,38 L390,50 L520,50 L545,50 L560,46 L575,54 L590,50 L700,50 L735,50 L750,16 L765,88 L780,40 L795,50 L930,50 L960,50 L975,44 L990,56 L1005,50 L1120,50 L1200,50"/>
             <circle class="blip" cx="765" cy="88" r="4.5"/>
           </svg>
-        </div>
-      </div>
-
-      <!-- glassmorphic QR card -->
-      <div class="qr-card">
-        <div class="qr-frame">
-          <img src="assets/qr-share.svg" width="150" height="150"
-               alt="このページを開くための共有用QRコード">
-        </div>
-        <div class="qr-meta">
-          <p class="ql">このページを共有</p>
-          <p class="qs">Scan to open</p>
-          <span class="qtag">QR スキャン</span>
-          <p class="qdl-label">QRをダウンロード</p>
-          <div class="qr-dl">
-            <a href="assets/qr-share.pdf" download="U-40_BLS_OPCAB_QR.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5z"/></svg>PDF</a>
-            <a href="assets/qr-share.png" download="U-40_BLS_OPCAB_QR.png"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5z"/></svg>PNG</a>
-          </div>
         </div>
       </div>
     </div>
@@ -796,6 +847,134 @@
       </li>
 
     </ul>
+
+    <!-- ============ SIMULATION TRAINING — literature ============ -->
+    <section class="lit" aria-labelledby="lit-title">
+      <div class="section-head">
+        <span class="eyebrow">Simulation Training · Reading List</span>
+        <h2 id="lit-title">シミュレーショントレーニング</h2>
+        <p>冠動脈吻合の基本を身につけるための推奨論文 9 選。<b>①手技を学ぶ → ②自作シミュレータで反復練習 → ③上達のエビデンスを理解</b>の順で組まれた学習パスです。各論文は DOI / PubMed で開けます（PMID 照合済み）。</p>
+      </div>
+
+      <div class="lit-order">
+        <h3>推奨される学習の進め方</h3>
+        <ol>
+          <li><span class="stp">1</span><span><b>手技を学ぶ</b> — how-to 動画で運針・連続縫合・heel-toe・パラシュート法を確認する</span></li>
+          <li><span class="stp">2</span><span><b>反復練習する</b> — 安価な自作シミュレータを作り、自宅・当直室で繰り返す</span></li>
+          <li><span class="stp">3</span><span><b>エビデンスを理解する</b> — 上達の根拠とよくある失敗・対策を学び、練習設計に活かす</span></li>
+        </ol>
+      </div>
+
+      <!-- Category A -->
+      <div class="lit-group">
+        <div class="gh"><span class="gn">A</span><span class="gt">手技を学ぶ（how-to / 動画）</span></div>
+        <div class="lit-list">
+          <article class="paper">
+            <span class="star vid">📹 動画教材</span>
+            <p class="ptitle">Myocardial revascularization: Tips and tricks for performing a coronary anastomosis</p>
+            <p class="pmeta">Klepper M, et al. <span class="j">Multimed Man Cardiothorac Surg (MMCTS).</span> 2021.</p>
+            <p class="ppoint">運針・連続縫合・heel-toe・パラシュート法を動画で確認できる中核 how-to 教材。最初に観るべき 1 本。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1510/mmcts.2021.065" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/34705350/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 34705350</a>
+            </div>
+          </article>
+          <article class="paper">
+            <span class="star vid">📹 動画教材</span>
+            <p class="ptitle">Cardiac surgery simulation – Part 3: Coronary anastomosis</p>
+            <p class="pmeta">Kelly J, et al. <span class="j">Multimed Man Cardiothorac Surg (MMCTS).</span> 2021.</p>
+            <p class="ppoint">シミュレーション環境で吻合手技を step-by-step に分解して教える動画。#1 と対で技術習得に最適。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1510/mmcts.2021.040" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/34559962/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 34559962</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Category B -->
+      <div class="lit-group">
+        <div class="gh"><span class="gn">B</span><span class="gt">自作シミュレータで反復練習（低コスト・DIY）</span></div>
+        <div class="lit-list">
+          <article class="paper">
+            <span class="star">★ おすすめ</span>
+            <p class="ptitle">How to build your own coronary anastomosis simulator from scratch</p>
+            <p class="pmeta">De Raet JM, et al. <span class="j">Interact Cardiovasc Thorac Surg.</span> 2013;16(6):772-6.</p>
+            <p class="ppoint">安価な材料で吻合練習台を自作する手順。自宅・当直室での反復練習を可能にする定番。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1093/icvts/ivt075" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/23456683/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 23456683</a>
+            </div>
+          </article>
+          <article class="paper">
+            <span class="star vid">📹 動画教材</span>
+            <p class="ptitle">How to construct and use a low-fidelity coronary anastomosis simulator</p>
+            <p class="pmeta">Durko A, et al. <span class="j">Multimed Man Cardiothorac Surg (MMCTS).</span> 2019.</p>
+            <p class="ppoint">低忠実度シミュレータの作り方と使い方を動画で解説。#3 とあわせて練習環境を整える。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1510/mmcts.2019.006" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/30767439/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 30767439</a>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <!-- Category C -->
+      <div class="lit-group">
+        <div class="gh"><span class="gn">C</span><span class="gt">上達のエビデンス・よくある失敗と対策（教育研究）</span></div>
+        <div class="lit-list">
+          <article class="paper">
+            <span class="star s2">★★ 必読</span>
+            <p class="ptitle">Improvement in coronary anastomosis with cardiac surgery simulation</p>
+            <p class="pmeta">Fann JI, et al. <span class="j">J Thorac Cardiovasc Surg.</span> 2008;136(6):1486-91.</p>
+            <p class="ppoint">シミュレーションで吻合の質が客観的に向上することを示したランドマーク（Fann）。トレーニングの根拠。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1016/j.jtcvs.2008.08.016" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/19114195/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 19114195</a>
+            </div>
+          </article>
+          <article class="paper">
+            <span class="star s2">★★ 必読</span>
+            <p class="ptitle">Simulation in coronary artery anastomosis early in CT residency: the Boot Camp experience</p>
+            <p class="pmeta">Fann JI, et al. <span class="j">J Thorac Cardiovasc Surg.</span> 2010;139(5):1275-81.</p>
+            <p class="ppoint">TSDA Boot Camp の礎。研修初期に吻合シミュレーションを導入する意義を示す、プログラム設計の必読論文。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1016/j.jtcvs.2009.08.045" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/19846125/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 19846125</a>
+            </div>
+          </article>
+          <article class="paper">
+            <p class="ptitle">Coronary Anastomosis Simulation: Directed Interventions to Optimize Success</p>
+            <p class="pmeta">Anand J, et al. <span class="j">Ann Thorac Surg.</span> 2021;111(6):2072-2077.</p>
+            <p class="ppoint">吻合が失敗する典型パターンと、それを修正する具体的介入を整理。「やりがちなミス」を学べる実践的 1 本。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1016/j.athoracsur.2020.06.099" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/32891660/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 32891660</a>
+            </div>
+          </article>
+          <article class="paper">
+            <span class="star">★ おすすめ</span>
+            <p class="ptitle">Practice improves performance on a coronary anastomosis simulator; attending supervision does not</p>
+            <p class="pmeta">Enter DH, et al. <span class="j">J Thorac Cardiovasc Surg.</span> 2015;149(1):12-6. <span class="j">(RCT)</span></p>
+            <p class="ppoint">反復練習の効果と、指導医の常時監督は必須でないことを示す RCT。自習中心の練習設計を裏づける。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1016/j.jtcvs.2014.09.029" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/25439774/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 25439774</a>
+            </div>
+          </article>
+          <article class="paper">
+            <span class="star s2">★★ 必読</span>
+            <p class="ptitle">Objective improvement with coronary anastomosis simulation training: a meta-analysis</p>
+            <p class="pmeta">O'Dwyer M, et al. <span class="j">BJS Open.</span> 2022;6(1):zrab147. <span class="j">(Meta-analysis)</span></p>
+            <p class="ppoint">吻合シミュレーション教育の効果を統合したメタ解析。学習パスの締めくくり（エビデンスの全体像）。</p>
+            <div class="plinks">
+              <a class="doi" href="https://doi.org/10.1093/bjsopen/zrab147" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M3.9 12a3.1 3.1 0 013.1-3.1h4V7h-4a5 5 0 100 10h4v-1.9h-4A3.1 3.1 0 013.9 12zm9.1-1h-2v2h2zm0-4h4a5 5 0 010 10h-4v-1.9h4A3.1 3.1 0 0017.1 12 3.1 3.1 0 0014 8.9h-4z"/></svg>DOI</a>
+              <a class="pmid" href="https://pubmed.ncbi.nlm.nih.gov/35143631/" target="_blank" rel="noopener noreferrer"><svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 3v2h3.6l-9.3 9.3 1.4 1.4L19 6.4V10h2V3zM5 5h6V3H5a2 2 0 00-2 2v14a2 2 0 002 2h14a2 2 0 002-2v-6h-2v6H5z"/></svg>PubMed 35143631</a>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
   </section>
 </main>
 
