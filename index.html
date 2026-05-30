@@ -1,0 +1,801 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>OPCAB / CABG を学ぶ — 冠動脈バイパス手術 学習リソース集 ｜ U-40 近畿支部 BLS</title>
+<meta name="description" content="U-40 近畿支部 BLS（2026年6月）。冠動脈バイパス手術（OPCAB / CABG）を学ぶための厳選オンライン学習リソース集。手技ビデオ・ハンズオン・動画ライブラリへスマートフォンからすぐにアクセス。藤内康平 / Kohei Tonai。">
+<meta name="theme-color" content="#081b33">
+<meta name="color-scheme" content="light only">
+<meta name="author" content="藤内康平 / Kohei Tonai">
+
+<!-- Open Graph -->
+<meta property="og:title" content="OPCAB / CABG を学ぶ — 冠動脈バイパス手術 学習リソース集">
+<meta property="og:description" content="U-40 近畿支部 BLS（2026年6月）。冠動脈バイパス手術を学ぶための厳選オンライン学習リソース集。">
+<meta property="og:type" content="website">
+<meta property="og:locale" content="ja_JP">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Zen+Kaku+Gothic+New:wght@500;700;900&display=swap" rel="stylesheet">
+
+<style>
+  /* ---------- Tokens ---------- */
+  :root{
+    --navy:#0d2747;
+    --navy-deep:#081b33;
+    --navy-deeper:#051324;
+    --crimson:#b51f2a;
+    --crimson-bright:#e63946;
+    --white:#ffffff;
+    --surface:#f6f8fb;
+    --ink:#1c2733;
+    --muted:#5a6b7b;
+    --line:#e4e9f0;
+    --line-soft:rgba(13,39,71,.08);
+
+    --radius:18px;
+    --radius-lg:24px;
+    --shadow-sm:0 1px 2px rgba(8,27,51,.06), 0 4px 12px rgba(8,27,51,.05);
+    --shadow-md:0 10px 30px rgba(8,27,51,.10), 0 2px 8px rgba(8,27,51,.06);
+    --shadow-lg:0 24px 60px rgba(8,27,51,.18);
+
+    --maxw:1180px;
+    --ease:cubic-bezier(.22,.61,.36,1);
+
+    --font-jp:"Noto Sans JP","Hiragino Kaku Gothic ProN",system-ui,sans-serif;
+    --font-display:"Zen Kaku Gothic New","Noto Sans JP",system-ui,sans-serif;
+  }
+
+  /* ---------- Reset ---------- */
+  *,*::before,*::after{box-sizing:border-box}
+  html{ -webkit-text-size-adjust:100%; scroll-behavior:smooth; }
+  body{
+    margin:0;
+    font-family:var(--font-jp);
+    color:var(--ink);
+    background:var(--surface);
+    line-height:1.75;
+    -webkit-font-smoothing:antialiased;
+    text-rendering:optimizeLegibility;
+    overflow-x:hidden;
+  }
+  img,svg{display:block;max-width:100%}
+  a{color:inherit;text-decoration:none}
+  ul{margin:0;padding:0;list-style:none}
+
+  /* ---------- Accessibility ---------- */
+  :focus-visible{
+    outline:3px solid var(--crimson-bright);
+    outline-offset:3px;
+    border-radius:6px;
+  }
+  .hero :focus-visible{ outline-color:#9fc3ff; }
+  .skip{
+    position:absolute;left:-9999px;top:0;z-index:200;
+    background:var(--white);color:var(--navy);
+    padding:.7rem 1rem;border-radius:0 0 10px 0;font-weight:700;
+  }
+  .skip:focus{left:0}
+  .vh{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
+
+  /* ---------- Layout ---------- */
+  .wrap{
+    width:100%;
+    max-width:var(--maxw);
+    margin-inline:auto;
+    padding-inline:clamp(1.15rem,5vw,2.5rem);
+  }
+
+  /* =========================================================
+     HERO — Premium dark
+     ========================================================= */
+  .hero{
+    position:relative;
+    isolation:isolate;
+    color:#eaf1fb;
+    background:
+      radial-gradient(120% 95% at 78% -8%, rgba(229,57,70,.30) 0%, rgba(229,57,70,0) 46%),
+      radial-gradient(120% 120% at 12% 8%, rgba(54,108,178,.42) 0%, rgba(54,108,178,0) 50%),
+      linear-gradient(168deg,var(--navy) 0%, var(--navy-deep) 55%, var(--navy-deeper) 100%);
+    padding-top:clamp(1.6rem,5vw,2.4rem);
+    padding-bottom:clamp(3rem,8vw,5rem);
+    overflow:hidden;
+  }
+  /* faint grid + glow texture */
+  .hero::before{
+    content:"";
+    position:absolute;inset:0;z-index:-1;
+    background-image:
+      linear-gradient(rgba(255,255,255,.035) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.035) 1px,transparent 1px);
+    background-size:46px 46px;
+    -webkit-mask-image:radial-gradient(105% 80% at 50% 0%,#000 35%,transparent 78%);
+            mask-image:radial-gradient(105% 80% at 50% 0%,#000 35%,transparent 78%);
+    opacity:.55;
+  }
+  /* soft floating glow */
+  .hero::after{
+    content:"";
+    position:absolute;z-index:-1;
+    width:62vw;height:62vw;max-width:620px;max-height:620px;
+    right:-12vw;top:-18vw;
+    background:radial-gradient(circle,rgba(229,57,70,.20),transparent 62%);
+    filter:blur(8px);
+    pointer-events:none;
+  }
+
+  /* top bar */
+  .topbar{
+    display:flex;align-items:center;justify-content:space-between;
+    gap:1rem;
+    padding-block:.4rem;
+    margin-bottom:clamp(1.6rem,5vw,2.6rem);
+  }
+  .brand{
+    display:flex;align-items:center;gap:.6rem;
+    font-family:var(--font-display);
+    font-weight:700;letter-spacing:.02em;
+    font-size:clamp(.92rem,2.6vw,1.05rem);
+    color:#fff;
+  }
+  .brand .mark{
+    width:34px;height:34px;flex:0 0 auto;
+    display:grid;place-items:center;
+    border-radius:9px;
+    background:linear-gradient(150deg,var(--crimson),var(--crimson-bright));
+    box-shadow:0 6px 16px rgba(181,31,42,.45), inset 0 1px 0 rgba(255,255,255,.25);
+  }
+  .brand .mark svg{width:19px;height:19px}
+  .topbar .org{
+    font-size:clamp(.66rem,2.1vw,.78rem);
+    color:#b7c8e2;font-weight:500;letter-spacing:.04em;
+    text-align:right;
+  }
+
+  /* hero grid */
+  .hero-grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:clamp(1.8rem,5vw,2.6rem);
+    align-items:center;
+  }
+
+  .kicker{
+    display:inline-flex;align-items:center;gap:.55rem;
+    font-size:clamp(.7rem,2.3vw,.82rem);
+    font-weight:700;letter-spacing:.13em;
+    text-transform:uppercase;
+    color:#f2d7da;
+    padding:.42rem .85rem;
+    border:1px solid rgba(229,57,70,.55);
+    border-radius:100px;
+    /* solid-enough fallback so caption stays AA-legible without blur */
+    background:rgba(122,28,38,.45);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+  }
+  .kicker .dot{
+    width:7px;height:7px;border-radius:50%;
+    background:var(--crimson-bright);
+    box-shadow:0 0 0 0 rgba(230,57,70,.7);
+    animation:pulse 2.2s ease-out infinite;
+  }
+  @keyframes pulse{
+    0%{box-shadow:0 0 0 0 rgba(230,57,70,.6)}
+    70%{box-shadow:0 0 0 9px rgba(230,57,70,0)}
+    100%{box-shadow:0 0 0 0 rgba(230,57,70,0)}
+  }
+
+  .h-title{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:clamp(2.5rem,12vw,5rem);
+    line-height:1.02;
+    letter-spacing:.005em;
+    margin:1.1rem 0 .35rem;
+    color:#fff;
+    text-wrap:balance;
+  }
+  .h-title .slash{
+    color:var(--crimson-bright);
+    -webkit-text-fill-color:var(--crimson-bright);
+    padding-inline:.08em;
+  }
+  .h-sub{
+    font-size:clamp(1rem,3.5vw,1.3rem);
+    color:#cdd9ee;
+    font-weight:500;
+    margin:0 0 1.4rem;
+    text-wrap:balance;
+  }
+
+  .presenter{
+    display:inline-flex;align-items:center;gap:.7rem;
+    padding:.55rem .35rem;
+    margin-bottom:1.4rem;
+  }
+  .presenter .pavatar{
+    width:42px;height:42px;border-radius:50%;flex:0 0 auto;
+    background:
+      radial-gradient(circle at 32% 30%,#3a6fb0,#0d2747);
+    display:grid;place-items:center;
+    font-family:var(--font-display);font-weight:900;
+    color:#fff;font-size:1rem;letter-spacing:.02em;
+    border:1.5px solid rgba(159,181,212,.5);
+    box-shadow:var(--shadow-sm);
+  }
+  .presenter .pname{font-family:var(--font-display);font-weight:700;color:#fff;font-size:1.02rem;line-height:1.25}
+  .presenter .prole{font-size:.74rem;color:#b7c8e2;letter-spacing:.06em}
+
+  /* ECG line */
+  .ecg{
+    margin-top:.4rem;
+    width:100%;
+    height:clamp(54px,16vw,84px);
+    overflow:hidden;
+    -webkit-mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+            mask-image:linear-gradient(90deg,transparent,#000 8%,#000 92%,transparent);
+  }
+  /* preserveAspectRatio="xMidYMid meet" keeps QRS proportions; fill stretches width */
+  .ecg svg{width:100%;height:100%}
+  .ecg .grid-line{stroke:rgba(159,181,212,.16);stroke-width:1}
+  .ecg .trace{
+    fill:none;
+    stroke:var(--crimson-bright);
+    stroke-width:2.6;
+    stroke-linecap:round;
+    stroke-linejoin:round;
+    filter:drop-shadow(0 0 6px rgba(230,57,70,.65));
+    stroke-dasharray:1400;
+    stroke-dashoffset:1400;
+    animation:ecg-draw 4.2s linear infinite;
+  }
+  .ecg .blip{
+    fill:#fff;
+    filter:drop-shadow(0 0 5px rgba(230,57,70,.9));
+    animation:ecg-blip 4.2s linear infinite;
+    opacity:0;
+  }
+  @keyframes ecg-draw{
+    0%{stroke-dashoffset:1400}
+    72%{stroke-dashoffset:0}
+    100%{stroke-dashoffset:0}
+  }
+  @keyframes ecg-blip{
+    0%,100%{opacity:0}
+    33%{opacity:0}
+    36%{opacity:1}
+    44%{opacity:0}
+  }
+
+  /* QR card (glassmorphic, with solid fallback) */
+  .qr-card{
+    justify-self:start;
+    width:min(100%,330px);
+    /* fallback solid-ish navy tint first, glass overlay layered above */
+    background:
+      linear-gradient(165deg,rgba(255,255,255,.16),rgba(255,255,255,.06)),
+      rgba(10,30,56,.55);
+    border:1px solid rgba(255,255,255,.28);
+    border-radius:var(--radius-lg);
+    padding:1.15rem;
+    backdrop-filter:blur(14px) saturate(140%);
+    -webkit-backdrop-filter:blur(14px) saturate(140%);
+    box-shadow:var(--shadow-lg), inset 0 1px 0 rgba(255,255,255,.35);
+    display:grid;
+    grid-template-columns:auto 1fr;
+    gap:1rem;
+    align-items:center;
+  }
+  .qr-card .qr-frame{
+    background:#fff;
+    border-radius:14px;
+    padding:9px;
+    width:clamp(118px,34vw,150px);
+    box-shadow:0 8px 22px rgba(0,0,0,.28);
+    flex:0 0 auto;
+  }
+  .qr-card .qr-frame img{width:100%;height:auto;aspect-ratio:1/1;border-radius:5px}
+  .qr-card .qr-meta .ql{
+    font-family:var(--font-display);
+    font-weight:700;color:#fff;font-size:1rem;line-height:1.4;
+    margin:0 0 .2rem;
+  }
+  .qr-card .qr-meta .qs{
+    font-size:.78rem;color:#d3deef;letter-spacing:.03em;margin:0;
+  }
+  .qr-card .qr-meta .qtag{
+    display:inline-block;margin-top:.6rem;
+    font-size:.66rem;font-weight:700;letter-spacing:.08em;
+    color:#fff;background:rgba(230,57,70,.92);
+    padding:.22rem .6rem;border-radius:100px;
+  }
+
+  /* =========================================================
+     RESOURCES — light body
+     ========================================================= */
+  .body-shell{
+    position:relative;
+    margin-top:-1px;
+    background:var(--surface);
+    border-radius:clamp(20px,5vw,34px) clamp(20px,5vw,34px) 0 0;
+    padding-top:clamp(2.4rem,7vw,4rem);
+    padding-bottom:clamp(2.6rem,7vw,4rem);
+  }
+  .body-shell::before{
+    content:"";
+    position:absolute;top:0;left:50%;transform:translateX(-50%);
+    width:54px;height:4px;border-radius:100px;
+    background:linear-gradient(90deg,var(--crimson),var(--crimson-bright));
+    margin-top:-2px;
+  }
+
+  .section-head{
+    text-align:center;
+    max-width:640px;margin-inline:auto;
+    margin-bottom:clamp(1.8rem,5vw,2.8rem);
+  }
+  .section-head .eyebrow{
+    font-size:.74rem;font-weight:700;letter-spacing:.16em;
+    text-transform:uppercase;color:var(--crimson);
+    display:inline-block;margin-bottom:.6rem;
+  }
+  .section-head h2{
+    font-family:var(--font-display);
+    font-weight:900;
+    font-size:clamp(1.55rem,5.5vw,2.3rem);
+    line-height:1.18;color:var(--navy);
+    margin:0 0 .55rem;letter-spacing:.01em;
+  }
+  .section-head p{
+    font-size:clamp(.9rem,2.6vw,1rem);
+    color:var(--muted);margin:0;
+    text-wrap:pretty;
+  }
+
+  /* grid: single column on phone, auto-fit upward */
+  .grid{
+    display:grid;
+    grid-template-columns:1fr;
+    gap:clamp(1.1rem,3.5vw,1.6rem);
+  }
+  @media (min-width:620px){
+    .grid{grid-template-columns:repeat(auto-fit,minmax(280px,1fr));}
+  }
+
+  /* card */
+  .card{
+    position:relative;
+    display:flex;flex-direction:column;
+    background:var(--white);
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    box-shadow:var(--shadow-sm);
+    transition:transform .45s var(--ease), box-shadow .45s var(--ease), border-color .45s var(--ease);
+    height:100%;
+  }
+  .card::before{
+    content:"";
+    position:absolute;top:0;left:0;right:0;height:3px;z-index:3;
+    background:linear-gradient(90deg,var(--crimson),var(--crimson-bright));
+    transform:scaleX(0);transform-origin:left;
+    transition:transform .5s var(--ease);
+  }
+  .card:hover,.card:focus-within{
+    transform:translateY(-6px);
+    box-shadow:var(--shadow-lg);
+    border-color:rgba(181,31,42,.22);
+  }
+  .card:hover::before,.card:focus-within::before{transform:scaleX(1)}
+
+  /* numbered badge */
+  .card .num{
+    position:absolute;top:12px;left:12px;z-index:4;
+    width:30px;height:30px;border-radius:9px;
+    display:grid;place-items:center;
+    font-family:var(--font-display);font-weight:900;font-size:.92rem;
+    color:#fff;
+    background:rgba(8,27,51,.72);
+    backdrop-filter:blur(4px);
+    -webkit-backdrop-filter:blur(4px);
+    border:1px solid rgba(255,255,255,.22);
+    box-shadow:0 4px 10px rgba(0,0,0,.25);
+  }
+
+  /* media (16:9) */
+  .card .media{
+    position:relative;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    background:linear-gradient(135deg,#15324f,#0b1f37);
+  }
+  .card .media img{
+    width:100%;height:100%;object-fit:cover;
+    transition:transform .7s var(--ease), filter .7s var(--ease);
+  }
+  .card:hover .media img,.card:focus-within .media img{
+    transform:scale(1.07);
+  }
+  .card .media::after{
+    content:"";position:absolute;inset:0;
+    background:linear-gradient(180deg,rgba(8,27,51,0) 55%,rgba(8,27,51,.32));
+    pointer-events:none;
+  }
+  /* play glyph overlay */
+  .play{
+    position:absolute;z-index:2;left:50%;top:50%;
+    transform:translate(-50%,-50%) scale(.92);
+    width:54px;height:54px;border-radius:50%;
+    display:grid;place-items:center;
+    background:rgba(255,255,255,.92);
+    box-shadow:0 8px 22px rgba(0,0,0,.30);
+    transition:transform .45s var(--ease), background .45s var(--ease);
+  }
+  .play svg{width:20px;height:20px;margin-left:3px;fill:var(--crimson)}
+  .card:hover .play,.card:focus-within .play{
+    transform:translate(-50%,-50%) scale(1.06);
+    background:#fff;
+  }
+
+  /* branded ESS tile (no image) */
+  .tile-ess{
+    position:relative;
+    aspect-ratio:16/9;
+    overflow:hidden;
+    background:
+      radial-gradient(120% 130% at 80% 12%, rgba(255,255,255,.18), transparent 50%),
+      linear-gradient(145deg,#e2253a 0%, #c8102e 50%, #8f0a20 100%);
+    color:#fff;
+    display:flex;flex-direction:column;justify-content:space-between;
+    padding:.95rem 1rem;
+  }
+  /* surgical-video mosaic / play-grid motif */
+  .tile-ess .mosaic{
+    position:absolute;inset:0;z-index:0;
+    background-image:
+      linear-gradient(rgba(255,255,255,.12) 1px,transparent 1px),
+      linear-gradient(90deg,rgba(255,255,255,.12) 1px,transparent 1px);
+    background-size:25% 33.33%;
+    opacity:.5;
+  }
+  .tile-ess .mosaic-dots{
+    position:absolute;inset:0;z-index:0;opacity:.85;
+  }
+  .tile-ess .mosaic-dots span{
+    position:absolute;width:13px;height:13px;border-radius:50%;
+    border:1.5px solid rgba(255,255,255,.55);
+    display:grid;place-items:center;
+  }
+  .tile-ess .mosaic-dots span::after{
+    content:"";
+    border-left:5px solid rgba(255,255,255,.75);
+    border-top:3.5px solid transparent;border-bottom:3.5px solid transparent;
+    margin-left:1px;
+  }
+  .tile-ess .mosaic-dots span:nth-child(1){left:14%;top:30%}
+  .tile-ess .mosaic-dots span:nth-child(2){left:62%;top:22%}
+  .tile-ess .mosaic-dots span:nth-child(3){left:84%;top:62%}
+  .tile-ess .mosaic-dots span:nth-child(4){left:38%;top:70%}
+  .tile-ess .t-top{position:relative;z-index:1;display:flex;justify-content:space-between;align-items:flex-start}
+  .tile-ess .t-website{
+    font-size:.66rem;font-weight:700;letter-spacing:.16em;text-transform:uppercase;
+    background:rgba(0,0,0,.28);padding:.22rem .55rem;border-radius:100px;
+    border:1px solid rgba(255,255,255,.3);
+  }
+  .tile-ess .t-word{
+    position:relative;z-index:1;
+    font-family:var(--font-display);font-weight:900;
+    font-size:clamp(2.6rem,11vw,3.6rem);line-height:.9;letter-spacing:.04em;
+    text-shadow:0 4px 16px rgba(0,0,0,.35);
+  }
+  .tile-ess .t-jj{
+    position:relative;z-index:1;
+    font-size:.72rem;font-weight:500;letter-spacing:.02em;
+    color:#fff;
+  }
+  .tile-ess .t-jj b{font-weight:900}
+
+  /* card body */
+  .card .content{
+    display:flex;flex-direction:column;
+    gap:.4rem;
+    padding:clamp(1rem,3.5vw,1.3rem);
+    flex:1 1 auto;
+  }
+  .card .source{
+    display:inline-flex;align-items:center;gap:.4rem;
+    font-size:.74rem;font-weight:700;letter-spacing:.04em;
+    color:var(--crimson);text-transform:uppercase;
+  }
+  .card .source .ic{width:13px;height:13px;flex:0 0 auto;opacity:.85}
+  .card h3{
+    font-family:var(--font-display);
+    font-weight:700;
+    font-size:clamp(1.08rem,3.6vw,1.22rem);
+    line-height:1.34;color:var(--navy);
+    margin:.05rem 0 .1rem;
+    text-wrap:balance;
+  }
+  .card .desc{
+    font-size:.88rem;color:var(--muted);
+    margin:0;flex:1 1 auto;
+    text-wrap:pretty;
+  }
+  /* button (decorative span; the .stretch overlay is the real link) */
+  .btn{
+    align-self:flex-start;
+    margin-top:.7rem;
+    display:inline-flex;align-items:center;gap:.5rem;
+    min-height:46px;
+    padding:.6rem 1.25rem;
+    font-family:var(--font-display);
+    font-weight:700;font-size:.92rem;
+    color:#fff;
+    background:linear-gradient(145deg,var(--navy) 0%,var(--navy-deep) 100%);
+    border-radius:100px;
+    box-shadow:0 6px 16px rgba(8,27,51,.22);
+    transition:background .4s var(--ease), box-shadow .4s var(--ease), transform .25s var(--ease);
+  }
+  .btn .arr{
+    display:inline-block;
+    transition:transform .35s var(--ease);
+  }
+  .card:hover .btn,.card:focus-within .btn{
+    background:linear-gradient(145deg,var(--crimson) 0%,var(--crimson-bright) 100%);
+    box-shadow:0 8px 20px rgba(181,31,42,.4);
+  }
+  .card:hover .btn .arr,.card:focus-within .btn .arr{transform:translateX(5px)}
+
+  /* full-card link overlay (whole card clickable + a single keyboard focus stop) */
+  .card .stretch{
+    position:absolute;inset:0;z-index:5;
+    border-radius:inherit;
+  }
+
+  /* =========================================================
+     FOOTER
+     ========================================================= */
+  footer{
+    background:var(--navy-deep);
+    color:#b1c2dd;
+    padding-block:clamp(2rem,6vw,2.8rem);
+  }
+  footer .foot-grid{
+    display:flex;flex-wrap:wrap;align-items:center;
+    justify-content:space-between;gap:1rem;
+    padding-bottom:1.1rem;margin-bottom:1.1rem;
+    border-bottom:1px solid rgba(159,181,212,.16);
+  }
+  footer .f-brand{
+    display:flex;align-items:center;gap:.55rem;
+    color:#fff;font-family:var(--font-display);font-weight:700;
+    font-size:.98rem;letter-spacing:.02em;
+  }
+  footer .f-brand .mark{
+    width:30px;height:30px;border-radius:8px;flex:0 0 auto;
+    display:grid;place-items:center;
+    background:linear-gradient(150deg,var(--crimson),var(--crimson-bright));
+  }
+  footer .f-brand .mark svg{width:16px;height:16px}
+  footer .f-tag{font-size:.78rem;color:#9fb3d1;letter-spacing:.05em}
+  footer .disclaimer{
+    font-size:.76rem;line-height:1.75;color:#9bb0cd;
+    max-width:760px;margin:0;
+  }
+  footer .copy{
+    margin-top:1rem;font-size:.72rem;color:#8499b8;letter-spacing:.04em;
+  }
+
+  /* ---------- Motion preferences ---------- */
+  @media (prefers-reduced-motion:reduce){
+    *{animation:none !important;transition:none !important;scroll-behavior:auto !important}
+    .ecg .trace{stroke-dashoffset:0}
+  }
+
+  /* ---------- Wider screens fine-tuning ---------- */
+  @media (min-width:860px){
+    .hero-grid{
+      grid-template-columns:1.35fr .9fr;
+      align-items:center;
+    }
+    .qr-card{justify-self:end}
+  }
+</style>
+</head>
+
+<body>
+<a class="skip" href="#resources">本文へスキップ</a>
+
+<!-- ===================== HERO ===================== -->
+<header class="hero">
+  <div class="wrap">
+
+    <div class="topbar">
+      <span class="brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-9.6-9.3C1 8.4 2.6 5.3 5.7 5c1.9-.2 3.5.9 4.3 2.3.8-1.4 2.4-2.5 4.3-2.3 3.1.3 4.7 3.4 3.3 6.7C19.5 16.4 12 21 12 21Z" fill="#fff"/></svg>
+        </span>
+        U-40 BLS
+      </span>
+      <span class="org">日本心臓血管外科学会<br>U-40 近畿支部</span>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-copy">
+        <span class="kicker"><span class="dot" aria-hidden="true"></span>U-40 近畿支部 BLS ・ 2026年6月</span>
+
+        <h1 class="h-title">OPCAB <span class="slash">/</span> CABG<br>を学ぶ</h1>
+        <p class="h-sub">冠動脈バイパス手術 — 学習リソース集</p>
+
+        <div class="presenter">
+          <span class="pavatar" aria-hidden="true">藤</span>
+          <span>
+            <span class="pname">藤内康平</span><br>
+            <span class="prole">Kohei Tonai</span>
+          </span>
+        </div>
+
+        <!-- animated ECG line: preserveAspectRatio meet keeps QRS proportions -->
+        <div class="ecg" aria-hidden="true">
+          <svg viewBox="0 0 1200 100" preserveAspectRatio="xMidYMid meet" role="presentation">
+            <line class="grid-line" x1="0" y1="50" x2="1200" y2="50"/>
+            <path class="trace" d="M0,50 L120,50 L150,50 L165,42 L180,58 L195,50 L300,50 L330,50 L345,20 L360,84 L375,38 L390,50 L520,50 L545,50 L560,46 L575,54 L590,50 L700,50 L735,50 L750,16 L765,88 L780,40 L795,50 L930,50 L960,50 L975,44 L990,56 L1005,50 L1120,50 L1200,50"/>
+            <circle class="blip" cx="765" cy="88" r="4.5"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- glassmorphic QR card -->
+      <div class="qr-card">
+        <div class="qr-frame">
+          <img src="assets/qr-share.svg" width="150" height="150"
+               alt="このページを開くための共有用QRコード">
+        </div>
+        <div class="qr-meta">
+          <p class="ql">このページを共有</p>
+          <p class="qs">Scan to open</p>
+          <span class="qtag">QR スキャン</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</header>
+
+<!-- ===================== RESOURCES ===================== -->
+<main class="body-shell">
+  <section id="resources" class="wrap" aria-labelledby="res-title">
+    <div class="section-head">
+      <span class="eyebrow">Curated Learning Resources</span>
+      <h2 id="res-title">厳選 5 リソース</h2>
+      <p>気になるカードをタップして、お手持ちのスマートフォンから各リソースを開いてください。手技ビデオ・ハンズオン・動画ライブラリを集めました。</p>
+    </div>
+
+    <ul class="grid">
+
+      <!-- 1 -->
+      <li class="card">
+        <div class="media">
+          <span class="num" aria-hidden="true">1</span>
+          <img src="assets/thumb-yan.jpg" loading="lazy" width="640" height="360"
+               alt="Tristan D. Yan 教授による Off-Pump Beating Heart Surgery 手技ビデオのサムネイル">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="content">
+          <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 16.5v-9l6 4.5-6 4.5zM12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>Prof. Tristan D. Yan</span>
+          <h3>Off-Pump Beating Heart Surgery</h3>
+          <p class="desc">Total Arterial Anaortic OPCAB を段階的に解説する手技ビデオシリーズ</p>
+          <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
+        </div>
+        <a class="stretch" href="https://youtu.be/49f4OpG8bBA" target="_blank" rel="noopener noreferrer">
+          <span class="vh">Off-Pump Beating Heart Surgery（Prof. Tristan D. Yan）を新しいタブで開く</span>
+        </a>
+      </li>
+
+      <!-- 2 -->
+      <li class="card">
+        <div class="media">
+          <span class="num" aria-hidden="true">2</span>
+          <img src="assets/thumb-asai.jpg" loading="lazy" width="640" height="360"
+               alt="浅井徹教授による Supreme Quality Arterial OPCAB 手技ビデオのサムネイル">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="content">
+          <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 16.5v-9l6 4.5-6 4.5zM12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>Prof. Tohru Asai</span>
+          <h3>Supreme Quality Arterial OPCAB</h3>
+          <p class="desc">"not SLOPCAB but TOPCAB" — 高品質な全動脈グラフト OPCAB の実際</p>
+          <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
+        </div>
+        <a class="stretch" href="https://youtu.be/Mf1L7s1Sc4o" target="_blank" rel="noopener noreferrer">
+          <span class="vh">Supreme Quality Arterial OPCAB（Prof. Tohru Asai）を新しいタブで開く</span>
+        </a>
+      </li>
+
+      <!-- 3 — branded ESS tile (no image) -->
+      <li class="card">
+        <div class="tile-ess">
+          <span class="num" aria-hidden="true">3</span>
+          <span class="mosaic" aria-hidden="true"></span>
+          <span class="mosaic-dots" aria-hidden="true"><span></span><span></span><span></span><span></span></span>
+          <span class="t-top">
+            <span class="t-website">Website</span>
+          </span>
+          <span class="t-word" aria-hidden="true">ESS</span>
+          <span class="t-jj">Johnson &amp; Johnson <b>MedTech</b></span>
+        </div>
+        <div class="content">
+          <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16v12H4zM2 18h20v2H2z"/></svg>Johnson &amp; Johnson MedTech</span>
+          <h3>ESS Website</h3>
+          <p class="desc">1,000本以上のエキスパート手技動画ライブラリ（要会員登録・ログイン）</p>
+          <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
+        </div>
+        <a class="stretch" href="https://www.ess.jjkkpro.jp/" target="_blank" rel="noopener noreferrer">
+          <span class="vh">ESS Website（Johnson &amp; Johnson MedTech）を新しいタブで開く</span>
+        </a>
+      </li>
+
+      <!-- 4 -->
+      <li class="card">
+        <div class="media">
+          <span class="num" aria-hidden="true">4</span>
+          <img src="assets/thumb-u40.jpg" loading="lazy" width="640" height="360"
+               alt="U-40 ONLINE BLC ハンズオン（CABG）／藤田知之先生による CABG ハンズオンのサムネイル">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="content">
+          <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 16.5v-9l6 4.5-6 4.5zM12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>オンラインBLC U-40</span>
+          <h3>U-40 ONLINE BLC ハンズオン (CABG)</h3>
+          <p class="desc">第2クール／国立循環器病研究センター 藤田知之先生による CABG ハンズオン</p>
+          <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
+        </div>
+        <a class="stretch" href="https://youtu.be/YZzJ-IGh11U" target="_blank" rel="noopener noreferrer">
+          <span class="vh">U-40 ONLINE BLC ハンズオン（CABG）を新しいタブで開く</span>
+        </a>
+      </li>
+
+      <!-- 5 -->
+      <li class="card">
+        <div class="media">
+          <span class="num" aria-hidden="true">5</span>
+          <img src="assets/thumb-wada.jpg" loading="lazy" width="640" height="360"
+               alt="チームWADA／月岡先生による冠動脈吻合トレーニング動画のサムネイル">
+          <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></svg></span>
+        </div>
+        <div class="content">
+          <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M10 16.5v-9l6 4.5-6 4.5zM12 2a10 10 0 100 20 10 10 0 000-20z"/></svg>チームWADA</span>
+          <h3>冠動脈吻合の教科書</h3>
+          <p class="desc">匠の外科医が実践＆解説する冠動脈吻合トレーニング（#2 月岡先生）</p>
+          <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
+        </div>
+        <a class="stretch" href="https://youtu.be/sWzvd1ij4tk" target="_blank" rel="noopener noreferrer">
+          <span class="vh">冠動脈吻合の教科書（チームWADA）を新しいタブで開く</span>
+        </a>
+      </li>
+
+    </ul>
+  </section>
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <span class="f-brand">
+        <span class="mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 21s-7.5-4.6-9.6-9.3C1 8.4 2.6 5.3 5.7 5c1.9-.2 3.5.9 4.3 2.3.8-1.4 2.4-2.5 4.3-2.3 3.1.3 4.7 3.4 3.3 6.7C19.5 16.4 12 21 12 21Z" fill="#fff"/></svg>
+        </span>
+        U-40 近畿支部 BLS ・ 2026
+      </span>
+      <span class="f-tag">OPCAB / CABG 学習リソース集</span>
+    </div>
+    <p class="disclaimer">
+      本ページに掲載した動画・ウェブサイトは、それぞれの権利者に帰属します。リンクは教育・学習上の参照を目的として提供しているものであり、各コンテンツの内容について本ページは責任を負いません。All videos and websites are the property of their respective owners; links are provided for educational reference only.
+    </p>
+    <p class="copy">© 2026 U-40 近畿支部 BLS ｜ 藤内康平 / Kohei Tonai</p>
+  </div>
+</footer>
+
+</body>
+</html>
