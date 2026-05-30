@@ -312,6 +312,21 @@
     color:#fff;background:rgba(230,57,70,.92);
     padding:.22rem .6rem;border-radius:100px;
   }
+  .qr-card .qr-meta .qdl-label{
+    margin:.75rem 0 .35rem;font-size:.66rem;font-weight:700;letter-spacing:.07em;
+    color:#d3deef;text-transform:uppercase;
+  }
+  .qr-card .qr-meta .qr-dl{display:flex;gap:.45rem;flex-wrap:wrap}
+  .qr-card .qr-meta .qr-dl a{
+    display:inline-flex;align-items:center;gap:.34rem;
+    min-height:34px;padding:.36rem .72rem;
+    font-family:var(--font-display);font-weight:700;font-size:.74rem;letter-spacing:.03em;
+    color:var(--navy);background:#fff;border-radius:9px;
+    box-shadow:0 3px 9px rgba(0,0,0,.22);
+    transition:transform .25s var(--ease), background .25s var(--ease);
+  }
+  .qr-card .qr-meta .qr-dl a svg{width:13px;height:13px;fill:var(--crimson)}
+  .qr-card .qr-meta .qr-dl a:hover{background:#f2d7da;transform:translateY(-1px)}
 
   /* =========================================================
      RESOURCES — light body
@@ -658,6 +673,11 @@
           <p class="ql">このページを共有</p>
           <p class="qs">Scan to open</p>
           <span class="qtag">QR スキャン</span>
+          <p class="qdl-label">QRをダウンロード</p>
+          <div class="qr-dl">
+            <a href="assets/qr-share.pdf" download="U-40_BLS_OPCAB_QR.pdf"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5z"/></svg>PDF</a>
+            <a href="assets/qr-share.png" download="U-40_BLS_OPCAB_QR.png"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 16l-5-5h3V4h4v7h3l-5 5zm-7 2h14v2H5z"/></svg>PNG</a>
+          </div>
         </div>
       </div>
     </div>
@@ -729,7 +749,7 @@
         <div class="content">
           <span class="source"><svg class="ic" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M4 4h16v12H4zM2 18h20v2H2z"/></svg>Johnson &amp; Johnson MedTech</span>
           <h3>ESS Website</h3>
-          <p class="desc">1,000本以上のエキスパート手技動画ライブラリ（要会員登録・ログイン）</p>
+          <p class="desc">JOMDD が作成している、J&amp;J の心臓血管外科のサイト（要ログイン）</p>
           <span class="btn"><span>開く</span><span class="arr" aria-hidden="true">▶</span></span>
         </div>
         <a class="stretch" href="https://www.ess.jjkkpro.jp/" target="_blank" rel="noopener noreferrer">
